@@ -25,6 +25,12 @@ app.use('/api/analytics', analyticsRoutes)
 
 app.use(errorMiddleware)
 
-app.listen(PORT, () => {
-  console.log(`NPL backend listening on http://localhost:${PORT}`)
-})
+// Local dev: start the HTTP server directly.
+// On Vercel the platform handles listening — only export the app.
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`NPL backend listening on http://localhost:${PORT}`)
+  })
+}
+
+module.exports = app
