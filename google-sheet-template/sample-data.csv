@@ -1,0 +1,7 @@
+id,customerName,sector,province,principalAmount,outstandingAmount,daysPastDue,status,lastPaymentDate,officer
+KH-NPL-001,Sokha Trading Co. Ltd,Wholesale,Phnom Penh,125000,118700,94,Non-Performing,2026-02-19,Vannak Chhun
+KH-NPL-002,Ratanak Construction Group,Construction,Siem Reap,98500,88400,63,Watchlist,2026-03-08,Piseth Chan
+KH-NPL-003,Mekong Agro Processors,Agriculture,Battambang,74500,59120,121,Non-Performing,2026-01-14,Sreyneang Lim
+KH-NPL-004,Angkor Boutique Hotel,Hospitality,Siem Reap,210000,199500,27,Performing,2026-04-30,Sophea Heng
+KH-NPL-005,Blue Bay Logistics,Transportation,Sihanoukville,156000,141900,76,Watchlist,2026-03-01,Dara Kim
+KH-NPL-006,Kampuchea Retail Network,Retail,Phnom Penh,132400,109300,14,Performing,2026-05-10,Rithy Chhem

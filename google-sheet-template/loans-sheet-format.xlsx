@@ -1,0 +1,3 @@
+Template placeholder for spreadsheet format.
+Recommended columns:
+id, customerName, sector, province, principalAmount, outstandingAmount, daysPastDue, status, lastPaymentDate, officer
