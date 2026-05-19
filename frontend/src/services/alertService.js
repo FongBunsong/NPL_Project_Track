@@ -1,4 +1,5 @@
 import { riskEngine } from './riskEngine'
+import { formatCurrency } from '../utils/formatCurrency'
 
 export const alertService = {
   generateAlerts(loans) {
@@ -8,10 +9,15 @@ export const alertService = {
       .sort((a, b) => b.riskScore - a.riskScore)
       .map((loan) => ({
         id: `ALT-${loan.id}`,
-        title: `${loan.customerName} requires follow-up`,
         loanId: loan.id,
+        customerName: loan.customerName,
+        sector: loan.sector,
+        province: loan.province,
+        officer: loan.officer,
         riskLevel: loan.riskLevel,
-        message: `${loan.daysPastDue} days past due with outstanding ${loan.outstandingAmount.toLocaleString('en-US')} USD`,
+        daysPastDue: loan.daysPastDue,
+        lastPaymentDate: loan.lastPaymentDate,
+        outstanding: formatCurrency(loan.outstandingAmount),
       }))
   },
 }
